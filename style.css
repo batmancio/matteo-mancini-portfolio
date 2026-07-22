@@ -485,27 +485,33 @@ h1, h2, h3, h4 {
     margin-top: 0.1rem;
 }
 
-/* Research Highlights & Metrics Visual Window */
+/* Python Code Window Architecture (matteo_mancini.py) */
 .code-window {
-    border-radius: 12px;
+    border-radius: 14px;
     overflow: hidden;
-    background: #0B0F17;
+    background: #0B0E14;
     border: 1px solid var(--border-subtle);
-    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.4);
+    box-shadow: 0 16px 40px rgba(0, 0, 0, 0.6);
+    transition: var(--transition);
+}
+
+.code-window:hover {
+    border-color: var(--border-accent);
+    box-shadow: var(--shadow-elevated);
 }
 
 .code-header {
-    background: #131926;
-    padding: 0.65rem 1rem;
+    background: #131722;
+    padding: 0.75rem 1.1rem;
     display: flex;
     align-items: center;
-    gap: 0.5rem;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    gap: 0.55rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
 }
 
 .dot {
-    width: 10px;
-    height: 10px;
+    width: 11px;
+    height: 11px;
     border-radius: 50%;
 }
 
@@ -516,64 +522,31 @@ h1, h2, h3, h4 {
 .code-title {
     margin-left: auto;
     font-family: var(--font-code);
-    font-size: 0.78rem;
+    font-size: 0.825rem;
     color: var(--text-muted);
 }
 
-.research-widget {
-    padding: 1.25rem;
-}
-
-.widget-metrics-list {
-    display: flex;
-    flex-direction: column;
-    gap: 0.85rem;
-}
-
-.widget-metric-card {
-    background: rgba(15, 23, 42, 0.6);
-    border: 1px solid rgba(255, 255, 255, 0.06);
-    border-radius: 8px;
-    padding: 0.85rem 1rem;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.metric-info {
-    display: flex;
-    align-items: center;
-    gap: 0.75rem;
-}
-
-.metric-info i {
-    font-size: 1.1rem;
-    color: var(--primary-light);
-}
-
-.metric-name {
-    display: block;
-    font-size: 0.875rem;
-    font-weight: 600;
-    color: var(--text-main);
-}
-
-.metric-detail {
-    display: block;
-    font-size: 0.75rem;
-    color: var(--text-dim);
-}
-
-.metric-badge {
+.code-body {
+    padding: 1.4rem;
+    overflow-x: auto;
     font-family: var(--font-code);
-    font-size: 0.78rem;
-    font-weight: 700;
-    padding: 0.25rem 0.55rem;
-    border-radius: 5px;
-    background: rgba(16, 185, 129, 0.14);
-    color: var(--primary-light);
-    border: 1px solid rgba(16, 185, 129, 0.3);
+    font-size: 0.85rem;
+    line-height: 1.65;
 }
+
+.code-body pre {
+    margin: 0;
+    white-space: pre-wrap;
+    word-break: break-word;
+}
+
+/* Syntax Highlighting Colors for Python */
+.py-keyword { color: #F59E0B; font-weight: 600; }
+.py-class { color: #38BDF8; font-weight: 700; }
+.py-func { color: #818CF8; font-weight: 600; }
+.py-param { color: #F8FAFC; }
+.py-str { color: #34D399; }
+.py-comment { color: #64748B; font-style: italic; }
 
 /* About Section Cards */
 .about-grid {

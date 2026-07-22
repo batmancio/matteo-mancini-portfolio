@@ -112,51 +112,32 @@
                             <span class="dot red"></span>
                             <span class="dot yellow"></span>
                             <span class="dot green"></span>
-                            <span class="code-title">research_highlights.py</span>
+                            <span class="code-title">matteo_mancini.py</span>
                         </div>
-                        <div class="research-widget">
-                            <div class="widget-metrics-list">
-                                <div class="widget-metric-card">
-                                    <div class="metric-info">
-                                        <i class="fa-solid fa-brain"></i>
-                                        <div>
-                                            <span class="metric-name">nlp-conll03-ner</span>
-                                            <span class="metric-detail">Bi-LSTM PyTorch vs DistilBERT</span>
-                                        </div>
-                                    </div>
-                                    <span class="metric-badge">F1: 91.5%</span>
-                                </div>
-                                <div class="widget-metric-card">
-                                    <div class="metric-info">
-                                        <i class="fa-solid fa-calculator"></i>
-                                        <div>
-                                            <span class="metric-name">bayesian-modelling-r-jags</span>
-                                            <span class="metric-detail">Hierarchical MCMC Bivariate</span>
-                                        </div>
-                                    </div>
-                                    <span class="metric-badge">DIC Selected</span>
-                                </div>
-                                <div class="widget-metric-card">
-                                    <div class="metric-info">
-                                        <i class="fa-solid fa-chart-line"></i>
-                                        <div>
-                                            <span class="metric-name">high-dim-time-series-lasso</span>
-                                            <span class="metric-detail">Sparse VAR & GLS-Lasso</span>
-                                        </div>
-                                    </div>
-                                    <span class="metric-badge">+3.6% RMSE</span>
-                                </div>
-                                <div class="widget-metric-card">
-                                    <div class="metric-info">
-                                        <i class="fa-solid fa-microchip"></i>
-                                        <div>
-                                            <span class="metric-name">parallel-python-computing</span>
-                                            <span class="metric-detail">Multi-core Speedup & Amdahl</span>
-                                        </div>
-                                    </div>
-                                    <span class="metric-badge">6.3x Speedup</span>
-                                </div>
-                            </div>
+                        <div class="code-body">
+                            <pre><code class="language-python"><span class="py-keyword">class</span> <span class="py-class">DataScientist</span>:
+    <span class="py-keyword">def</span> <span class="py-func">__init__</span>(<span class="py-param">self</span>):
+        <span class="py-param">self</span>.name = <span class="py-str">"Matteo Mancini"</span>
+        <span class="py-param">self</span>.role = <span class="py-str">"Data Scientist & AI Engineer"</span>
+        <span class="py-param">self</span>.birth_date = <span class="py-str">"19/06/2001"</span>
+        <span class="py-param">self</span>.location = <span class="py-str">"Roma, Italia / Rennes, Francia"</span>
+        <span class="py-param">self</span>.degree = <span class="py-str">"Laurea Magistrale Data Analyst (La Sapienza - EQF 7)"</span>
+        <span class="py-param">self</span>.specialization = <span class="py-str">"Master Smart Data Science (ENSAI - EQF 7)"</span>
+        <span class="py-param">self</span>.background = <span class="py-str">"Statistica Gestionale (La Sapienza)"</span>
+        
+        <span class="py-param">self</span>.skills = [
+            <span class="py-str">"A2A Protocol & MCP"</span>, <span class="py-str">"RAG & LangGraph"</span>,
+            <span class="py-str">"Qdrant Vector DB"</span>, <span class="py-str">"Docker & RStudio"</span>,
+            <span class="py-str">"Machine Learning"</span>, <span class="py-str">"PyTorch & Scikit-Learn"</span>,
+            <span class="py-str">"Pandas & NumPy"</span>
+        ]
+
+    <span class="py-keyword">def</span> <span class="py-func">solve_complex_problems</span>(<span class="py-param">self</span>, data):
+        <span class="py-keyword">return</span> <span class="py-func">quant_research</span>(data) + <span class="py-func">scalable_ai</span>()
+
+<span class="py-comment"># Active Profile Executed</span>
+me = <span class="py-class">DataScientist</span>()
+me.<span class="py-func">solve_complex_problems</span>(impact=<span class="py-str">"High"</span>)</code></pre>
                         </div>
                     </div>
                 </div>
