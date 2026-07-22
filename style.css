@@ -3,36 +3,36 @@
    ========================================================================== */
 
 :root {
-    /* Color System: Warm Architectural Slate, Carbon & Amber/Bronze */
-    --bg-dark: #0F1117;
-    --bg-surface: #161922;
-    --bg-card: rgba(22, 26, 36, 0.75);
-    --bg-card-hover: rgba(30, 36, 50, 0.9);
-    --border-glass: rgba(255, 255, 255, 0.08);
-    --border-subtle: rgba(255, 255, 255, 0.14);
-    --border-accent: rgba(217, 119, 6, 0.35);
+    /* Color System: Coherent Soft Sage, Muted Eucalyptus & Dark Antracite */
+    --bg-dark: #0E1014;
+    --bg-surface: #14171D;
+    --bg-card: rgba(20, 24, 31, 0.75);
+    --bg-card-hover: rgba(28, 33, 42, 0.9);
+    --border-glass: rgba(255, 255, 255, 0.07);
+    --border-subtle: rgba(255, 255, 255, 0.12);
+    --border-accent: rgba(148, 168, 154, 0.3);
     
     /* Typography Colors */
-    --text-main: #F1F5F9;
-    --text-muted: #94A3B8;
-    --text-dim: #64748B;
+    --text-main: #F1F4F2;
+    --text-muted: #9DA8A0;
+    --text-dim: #68756C;
     
-    /* Domain Accents - High Craft Architectural Palette */
-    --primary: #D97706;         /* Warm Amber / Bronze System Accent */
-    --primary-light: #F59E0B;
-    --primary-glow: rgba(217, 119, 6, 0.18);
+    /* Domain Accents - Coherent Pastel Sage System Palette */
+    --primary: #829A88;         /* Soft Muted Pastel Sage Primary Accent */
+    --primary-light: #94A89A;   /* Soft Light Eucalyptus Glow */
+    --primary-glow: rgba(148, 168, 154, 0.15);
     
-    --accent-nlp: #4D9078;      /* Sage / Muted Emerald for AI & NLP */
-    --accent-nlp-bg: rgba(77, 144, 120, 0.14);
+    --accent-nlp: #94A89A;      /* Soft Pastel Sage for AI & NLP */
+    --accent-nlp-bg: rgba(148, 168, 154, 0.12);
     
-    --accent-stats: #64748B;    /* Mineral Steel for Statistics & Bayes */
-    --accent-stats-bg: rgba(100, 116, 139, 0.16);
+    --accent-stats: #8E9DAE;    /* Soft Muted Steel Slate for Statistics & Bayes */
+    --accent-stats-bg: rgba(142, 157, 174, 0.12);
     
-    --accent-ml: #C2410C;       /* Terracotta Ochre for Machine Learning */
-    --accent-ml-bg: rgba(194, 65, 12, 0.14);
+    --accent-ml: #B8A898;       /* Soft Sandstone Taupe for Machine Learning */
+    --accent-ml-bg: rgba(184, 168, 152, 0.12);
     
-    --accent-data: #475569;     /* Titanium Charcoal for Big Data & HPC */
-    --accent-data-bg: rgba(71, 85, 105, 0.2);
+    --accent-data: #8DA3A6;     /* Soft Titanium Cyan-Gray for Big Data & HPC */
+    --accent-data-bg: rgba(141, 163, 166, 0.12);
     
     /* Typography Families */
     --font-heading: 'Outfit', -apple-system, BlinkMacSystemFont, sans-serif;
@@ -42,7 +42,7 @@
     /* Transitions & Shadows */
     --transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
     --shadow-card: 0 4px 20px -2px rgba(0, 0, 0, 0.6);
-    --shadow-elevated: 0 12px 36px -4px rgba(0, 0, 0, 0.7), 0 0 20px rgba(217, 119, 6, 0.15);
+    --shadow-elevated: 0 12px 36px -4px rgba(0, 0, 0, 0.7), 0 0 20px rgba(148, 168, 154, 0.12);
 }
 
 /* Reset & Global Box Sizing */
@@ -69,14 +69,14 @@ body {
     -moz-osx-font-smoothing: grayscale;
 }
 
-/* Subtle Structural Ambient Light (Warm Architectural Glow, No Neon Slop) */
+/* Subtle Structural Ambient Light (Coherent Soft Sage Glow) */
 .bg-glow {
     position: fixed;
     border-radius: 50%;
-    filter: blur(160px);
+    filter: blur(180px);
     z-index: -1;
     pointer-events: none;
-    opacity: 0.18;
+    opacity: 0.12;
 }
 
 .glow-1 {
@@ -84,7 +84,7 @@ body {
     left: 20%;
     width: 600px;
     height: 400px;
-    background: radial-gradient(circle, rgba(217, 119, 6, 0.4) 0%, transparent 70%);
+    background: radial-gradient(circle, rgba(148, 168, 154, 0.3) 0%, transparent 70%);
 }
 
 .glow-2 {
@@ -92,7 +92,7 @@ body {
     right: -10%;
     width: 500px;
     height: 500px;
-    background: radial-gradient(circle, rgba(30, 36, 50, 0.8) 0%, transparent 70%);
+    background: radial-gradient(circle, rgba(142, 157, 174, 0.25) 0%, transparent 70%);
 }
 
 .glow-3 {
@@ -100,7 +100,7 @@ body {
     left: 10%;
     width: 550px;
     height: 550px;
-    background: radial-gradient(circle, rgba(77, 144, 120, 0.2) 0%, transparent 70%);
+    background: radial-gradient(circle, rgba(148, 168, 154, 0.2) 0%, transparent 70%);
 }
 
 /* Container System with Mobile Safe-Areas */
@@ -303,14 +303,16 @@ h1, h2, h3, h4 {
 
 .btn-primary {
     background: var(--primary);
-    color: #ffffff;
-    box-shadow: 0 4px 14px rgba(217, 119, 6, 0.3);
+    color: #0E1014;
+    font-weight: 700;
+    box-shadow: 0 4px 14px rgba(148, 168, 154, 0.25);
 }
 
 .btn-primary:hover {
-    background: #B45309;
+    background: var(--primary-light);
+    color: #0E1014;
     transform: translateY(-2px);
-    box-shadow: 0 6px 20px rgba(217, 119, 6, 0.45);
+    box-shadow: 0 6px 20px rgba(148, 168, 154, 0.35);
 }
 
 .btn-outline {
@@ -338,7 +340,7 @@ h1, h2, h3, h4 {
 }
 
 .btn-icon:hover {
-    background: rgba(217, 119, 6, 0.15);
+    background: rgba(148, 168, 154, 0.15);
     color: var(--primary-light);
     border-color: var(--primary);
 }
@@ -347,9 +349,9 @@ h1, h2, h3, h4 {
     padding: 0.45rem 0.9rem;
     font-size: 0.825rem;
     border-radius: 6px;
-    background: rgba(217, 119, 6, 0.1);
+    background: rgba(148, 168, 154, 0.1);
     color: var(--primary-light);
-    border: 1px solid rgba(217, 119, 6, 0.25);
+    border: 1px solid rgba(148, 168, 154, 0.25);
     text-decoration: none;
     transition: var(--transition);
     font-weight: 500;
@@ -357,7 +359,8 @@ h1, h2, h3, h4 {
 
 .btn-card-primary:hover {
     background: var(--primary);
-    color: #fff;
+    color: #0E1014;
+    font-weight: 600;
 }
 
 .btn-full {
@@ -383,9 +386,9 @@ h1, h2, h3, h4 {
     gap: 0.5rem;
     padding: 0.35rem 0.85rem;
     border-radius: 9999px;
-    background: rgba(16, 185, 129, 0.1);
-    border: 1px solid rgba(16, 185, 129, 0.25);
-    color: var(--accent-nlp);
+    background: rgba(148, 168, 154, 0.1);
+    border: 1px solid rgba(148, 168, 154, 0.25);
+    color: var(--primary-light);
     font-size: 0.825rem;
     font-weight: 500;
     margin-bottom: 1.25rem;
@@ -395,8 +398,8 @@ h1, h2, h3, h4 {
     width: 8px;
     height: 8px;
     border-radius: 50%;
-    background-color: var(--accent-nlp);
-    box-shadow: 0 0 8px var(--accent-nlp);
+    background-color: var(--primary-light);
+    box-shadow: 0 0 8px var(--primary-light);
     animation: pulse 2s infinite;
 }
 
@@ -680,25 +683,25 @@ h1, h2, h3, h4 {
 .project-card[data-category="ai-nlp"] .card-tag {
     background: var(--accent-nlp-bg);
     color: var(--accent-nlp);
-    border: 1px solid rgba(16, 185, 129, 0.3);
+    border: 1px solid rgba(148, 168, 154, 0.25);
 }
 
 .project-card[data-category="stats"] .card-tag {
     background: var(--accent-stats-bg);
     color: var(--accent-stats);
-    border: 1px solid rgba(59, 130, 246, 0.3);
+    border: 1px solid rgba(142, 157, 174, 0.25);
 }
 
 .project-card[data-category="ml"] .card-tag {
     background: var(--accent-ml-bg);
     color: var(--accent-ml);
-    border: 1px solid rgba(245, 158, 11, 0.3);
+    border: 1px solid rgba(184, 168, 152, 0.25);
 }
 
 .project-card[data-category="data-eng"] .card-tag {
     background: var(--accent-data-bg);
     color: var(--accent-data);
-    border: 1px solid rgba(6, 182, 212, 0.3);
+    border: 1px solid rgba(141, 163, 166, 0.25);
 }
 
 .card-github {
