@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matteo Mancini | Data Scientist & AI Engineer Portfolio</title>
+    <meta name="description" content="Portfolio di Matteo Mancini - Data Scientist (EQF 7) esperto in Modellazione Statistica, AI Multi-Agenti (A2A, MCP), PyTorch, R, NoSQL e Machine Learning.">
+    <meta name="keywords" content="Matteo Mancini, Data Science, AI Engineer, Machine Learning, PyTorch, R, JAGS, ENSAI, Sapienza, Portfolio">
+    <meta name="author" content="Matteo Mancini">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Matteo Mancini | Data Scientist & AI Engineer">
+    <meta property="og:description" content="Esplora il portfolio con i 9 progetti GitHub in AI, NLP, Statistica Bayesiana e Big Data.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://batmancio.github.io/matteo-mancini-portfolio/">
+
+    <!-- Google Fonts & Font Awesome -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@400;600;700;800&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Ambient Background Glows -->
+    <div class="bg-glow glow-1"></div>
+    <div class="bg-glow glow-2"></div>
+    <div class="bg-glow glow-3"></div>
+
+    <!-- Navigation Header -->
+    <header id="main-header" class="glass-header">
+        <div class="container nav-container">
+            <a href="#hero" class="logo-brand" id="nav-logo">
+                <span class="logo-icon">&lt;MM&gt;</span>
+                <span class="logo-text">Matteo Mancini</span>
+            </a>
+            
+            <nav class="nav-menu" id="nav-menu">
+                <a href="#about" class="nav-link" id="nav-link-about">Chi Sono</a>
+                <a href="#projects" class="nav-link" id="nav-link-projects">Progetti GitHub</a>
+                <a href="#skills" class="nav-link" id="nav-link-skills">Competenze</a>
+                <a href="#experience" class="nav-link" id="nav-link-experience">Percorso</a>
+                <a href="#contact" class="nav-link btn-contact-nav" id="nav-link-contact">Contatti</a>
+            </nav>
+
+            <button class="mobile-toggle" id="mobile-toggle" aria-label="Menu Navigazione">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+
+        <!-- Hero Section -->
+        <section id="hero" class="hero-section">
+            <div class="container hero-container">
+                <div class="hero-content">
+                    <div class="badge-status" id="hero-badge">
+                        <span class="pulse-dot"></span>
+                        Disponibile per Ruoli in Data Science & AI Engineering
+                    </div>
+
+                    <h1 class="hero-title" id="hero-title">
+                        Ciao, sono <span class="gradient-text">Matteo Mancini</span>
+                    </h1>
+
+                    <div class="hero-subtitle-wrapper">
+                        <span class="hero-static">Specializzato in </span>
+                        <span class="typing-text" id="typing-text"></span>
+                        <span class="cursor">&nbsp;</span>
+                    </div>
+
+                    <p class="hero-description" id="hero-desc">
+                        Data Scientist (EQF 7) con un solido background in <strong>Statistica Quantitativa</strong> e specializzato in <strong>Architetture AI Avanzate, Sistemi Multi-Agente (A2A, MCP), NLP e Modellazione Bayesiana</strong>. Unisco ricerca metodologica rigorosa e soluzioni AI di produzione scalabili.
+                    </p>
+
+                    <div class="hero-cta-group">
+                        <a href="#projects" class="btn btn-primary" id="btn-hero-projects">
+                            <i class="fa-solid fa-rocket"></i> Esplora i Progetti (9 Repo)
+                        </a>
+                        <a href="https://github.com/batmancio" target="_blank" rel="noopener noreferrer" class="btn btn-outline" id="btn-hero-github">
+                            <i class="fa-brands fa-github"></i> GitHub @batmancio ↗
+                        </a>
+                        <a href="https://www.linkedin.com/in/matteo-mancini-75a982131/" target="_blank" rel="noopener noreferrer" class="btn btn-icon" id="btn-hero-linkedin" title="Profilo LinkedIn">
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </a>
+                    </div>
+
+                    <div class="hero-quick-stats">
+                        <div class="stat-item">
+                            <span class="stat-num" data-target="9">0</span><span class="stat-plus">+</span>
+                            <span class="stat-label">Repository GitHub</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-num" data-target="7">0</span>
+                            <span class="stat-label">Livello EQF (Master SDS)</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-num" data-target="4">0</span><span class="stat-plus">+</span>
+                            <span class="stat-label">Aree di Ricerca Statistica</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hero-visual">
+                    <div class="code-window glass-card">
+                        <div class="code-header">
+                            <span class="dot red"></span>
+                            <span class="dot yellow"></span>
+                            <span class="dot green"></span>
+                            <span class="code-title">research_highlights.py</span>
+                        </div>
+                        <div class="research-widget">
+                            <div class="widget-metrics-list">
+                                <div class="widget-metric-card">
+                                    <div class="metric-info">
+                                        <i class="fa-solid fa-brain"></i>
+                                        <div>
+                                            <span class="metric-name">nlp-conll03-ner</span>
+                                            <span class="metric-detail">Bi-LSTM PyTorch vs DistilBERT</span>
+                                        </div>
+                                    </div>
+                                    <span class="metric-badge">F1: 91.5%</span>
+                                </div>
+                                <div class="widget-metric-card">
+                                    <div class="metric-info">
+                                        <i class="fa-solid fa-calculator"></i>
+                                        <div>
+                                            <span class="metric-name">bayesian-modelling-r-jags</span>
+                                            <span class="metric-detail">Hierarchical MCMC Bivariate</span>
+                                        </div>
+                                    </div>
+                                    <span class="metric-badge">DIC Selected</span>
+                                </div>
+                                <div class="widget-metric-card">
+                                    <div class="metric-info">
+                                        <i class="fa-solid fa-chart-line"></i>
+                                        <div>
+                                            <span class="metric-name">high-dim-time-series-lasso</span>
+                                            <span class="metric-detail">Sparse VAR & GLS-Lasso</span>
+                                        </div>
+                                    </div>
+                                    <span class="metric-badge">+3.6% RMSE</span>
+                                </div>
+                                <div class="widget-metric-card">
+                                    <div class="metric-info">
+                                        <i class="fa-solid fa-microchip"></i>
+                                        <div>
+                                            <span class="metric-name">parallel-python-computing</span>
+                                            <span class="metric-detail">Multi-core Speedup & Amdahl</span>
+                                        </div>
+                                    </div>
+                                    <span class="metric-badge">6.3x Speedup</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about-section section-padding">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">Profilo Professionale</span>
+                    <h2 class="section-title">Chi Sono & Visione Metodologica</h2>
+                </div>
+
+                <div class="about-grid">
+                    <div class="about-card glass-card">
+                        <div class="icon-box"><i class="fa-solid fa-microchip"></i></div>
+                        <h3>Architetture AI & Multi-Agenti</h3>
+                        <p>Specializzato nell'integrazione di sistemi multi-agente basati sui protocolli <strong>A2A (Agent-to-Agent)</strong> e <strong>MCP (Model Context Protocol)</strong>, unendo LLM, motori vettoriali (Qdrant) e database PostgreSQL.</p>
+                    </div>
+
+                    <div class="about-card glass-card">
+                        <div class="icon-box"><i class="fa-solid fa-chart-line"></i></div>
+                        <h3>Statistica Bayesiana & Time Series</h3>
+                        <p>Rigorosa formazione in inferenza bayesiana, modellazione gerarchica MCMC (JAGS/R), analisi di dati funzionali (FDA) e serie storiche ad alta dimensione (Sparse VAR, GLS-Lasso).</p>
+                    </div>
+
+                    <div class="about-card glass-card">
+                        <div class="icon-box"><i class="fa-solid fa-cubes"></i></div>
+                        <h3>MLOps & Scalabilità di Produzione</h3>
+                        <p>Containerizzazione Docker per la riproducibilità degli esperimenti, pipeline di monitoraggio in tempo reale con Prometheus e Grafana, e sviluppo di codebase Python/R modulari.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Showcase Section -->
+        <section id="projects" class="projects-section section-padding">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">GitHub Portfolio</span>
+                    <h2 class="section-title">I Miei Progetti Open Source</h2>
+                    <p class="section-description">Esplora i 9 repository pubblicati sul mio profilo GitHub <a href="https://github.com/batmancio" target="_blank" rel="noopener noreferrer" class="link-highlight">@batmancio</a>, completi di codice sorgente, test e README dettagliati.</p>
+                </div>
+
+                <!-- Filter Controls -->
+                <div class="filter-wrapper">
+                    <div class="filter-container">
+                        <button class="filter-btn active" data-filter="all" id="filter-all">Tutti (9)</button>
+                        <button class="filter-btn" data-filter="ai-nlp" id="filter-ai-nlp">AI & NLP</button>
+                        <button class="filter-btn" data-filter="stats" id="filter-stats">Statistica & Bayes</button>
+                        <button class="filter-btn" data-filter="ml" id="filter-ml">Machine Learning</button>
+                        <button class="filter-btn" data-filter="data-eng" id="filter-data-eng">Big Data & NoSQL</button>
+                    </div>
+                </div>
+
+                <!-- Projects Grid -->
+                <div class="projects-grid" id="projects-grid">
+                    
+                    <!-- Project 1: nlp-conll03-ner -->
+                    <div class="project-card glass-card" data-category="ai-nlp" id="proj-nlp-conll03-ner">
+                        <div class="card-header">
+                            <span class="card-tag">AI & NLP</span>
+                            <a href="https://github.com/batmancio/nlp-conll03-ner" target="_blank" rel="noopener noreferrer" class="card-github" title="Vedi su GitHub"><i class="fa-brands fa-github"></i></a>
+                        </div>
+                        <h3 class="card-title">nlp-conll03-ner</h3>
+                        <p class="card-desc">Benchmark di Named Entity Recognition su CoNLL-03. Confronta un modello custom <strong>Bi-LSTM PyTorch</strong> (con packed sequences) con un fine-tuned <strong>DistilBERT</strong>.</p>
+                        <div class="card-metrics">
+                            <span class="metric-pill"><i class="fa-solid fa-bolt"></i> DistilBERT F1: 91.5%</span>
+                            <span class="metric-pill"><i class="fa-solid fa-chart-pie"></i> Dynamic Batching</span>
+                        </div>
+                        <div class="card-tech">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">PyTorch</span>
+                            <span class="tech-tag">HuggingFace</span>
+                            <span class="tech-tag">seqeval</span>
+                        </div>
+                        <div class="card-actions">
+                            <a href="https://github.com/batmancio/nlp-conll03-ner" target="_blank" rel="noopener noreferrer" class="btn btn-card-primary">Repository Code ↗</a>
+                        </div>
+                    </div>
+
+                    <!-- Project 2: bayesian-modelling-r-jags -->
+                    <div class="project-card glass-card" data-category="stats" id="proj-bayesian-modelling-r-jags">
+                        <div class="card-header">
+                            <span class="card-tag">Statistica Bayesiana</span>
+                            <a href="https://github.com/batmancio/bayesian-modelling-r-jags" target="_blank" rel="noopener noreferrer" class="card-github" title="Vedi su GitHub"><i class="fa-brands fa-github"></i></a>
+                        </div>
+                        <h3 class="card-title">bayesian-modelling-r-jags</h3>
+                        <p class="card-desc">Modellazione gerarchica bayesiana bivariata in <strong>R e JAGS</strong> per predire i punteggi NBA e simulare le classifiche con campionamento MCMC.</p>
+                        <div class="card-metrics">
+                            <span class="metric-pill"><i class="fa-solid fa-chart-line"></i> DIC Model Selection</span>
+                            <span class="metric-pill"><i class="fa-solid fa-check-double"></i> MCMC Convergence</span>
+                        </div>
+                        <div class="card-tech">
+                            <span class="tech-tag">R</span>
+                            <span class="tech-tag">JAGS</span>
+                            <span class="tech-tag">R2jags</span>
+                            <span class="tech-tag">coda</span>
+                        </div>
+                        <div class="card-actions">
+                            <a href="https://github.com/batmancio/bayesian-modelling-r-jags" target="_blank" rel="noopener noreferrer" class="btn btn-card-primary">Repository Code ↗</a>
+                        </div>
+                    </div>
+
+                    <!-- Project 3: functional-data-analysis-python -->
+                    <div class="project-card glass-card" data-category="stats" id="proj-fda-python">
+                        <div class="card-header">
+                            <span class="card-tag">FDA & Climatologia</span>
+                            <a href="https://github.com/batmancio/functional-data-analysis-python" target="_blank" rel="noopener noreferrer" class="card-github" title="Vedi su GitHub"><i class="fa-brands fa-github"></i></a>
+                        </div>
+                        <h3 class="card-title">functional-data-analysis-python</h3>
+                        <p class="card-desc">Analisi di dati funzionali per curve climatiche giornaliere (dati AEMET). Implementa B-Spline, Fourier Basis Smoothing e <strong>FPCA</strong>.</p>
+                        <div class="card-metrics">
+                            <span class="metric-pill"><i class="fa-solid fa-sliders"></i> FPCA Var: >95%</span>
+                            <span class="metric-pill"><i class="fa-solid fa-wave-square"></i> B-Splines</span>
+                        </div>
+                        <div class="card-tech">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">scikit-fda</span>
+                            <span class="tech-tag">FDApy</span>
+                            <span class="tech-tag">Scipy</span>
+                        </div>
+                        <div class="card-actions">
+                            <a href="https://github.com/batmancio/functional-data-analysis-python" target="_blank" rel="noopener noreferrer" class="btn btn-card-primary">Repository Code ↗</a>
+                        </div>
+                    </div>
+
+                    <!-- Project 4: high-dim-time-series-lasso -->
+                    <div class="project-card glass-card" data-category="stats" id="proj-high-dim-ts">
+                        <div class="card-header">
+                            <span class="card-tag">Serie Storiche & Econometria</span>
+                            <a href="https://github.com/batmancio/high-dim-time-series-lasso" target="_blank" rel="noopener noreferrer" class="card-github" title="Vedi su GitHub"><i class="fa-brands fa-github"></i></a>
+                        </div>
+                        <h3 class="card-title">high-dim-time-series-lasso</h3>
+                        <p class="card-desc">Previsioni econometriche ad alta dimensione per 1.344 serie di carico elettrico (Sparse VAR, GLS-Lasso con whitening e Post-OLS).</p>
+                        <div class="card-metrics">
+                            <span class="metric-pill"><i class="fa-solid fa-arrow-trend-up"></i> RMSE: +3.6% Improv.</span>
+                            <span class="metric-pill"><i class="fa-solid fa-compress"></i> Sparse VAR</span>
+                        </div>
+                        <div class="card-tech">
+                            <span class="tech-tag">R</span>
+                            <span class="tech-tag">glmnet</span>
+                            <span class="tech-tag">bigtime</span>
+                            <span class="tech-tag">Sparse VAR</span>
+                        </div>
+                        <div class="card-actions">
+                            <a href="https://github.com/batmancio/high-dim-time-series-lasso" target="_blank" rel="noopener noreferrer" class="btn btn-card-primary">Repository Code ↗</a>
+                        </div>
+                    </div>
+
+                    <!-- Project 5: parallel-python-computing -->
+                    <div class="project-card glass-card" data-category="data-eng" id="proj-parallel-python">
+                        <div class="card-header">
+                            <span class="card-tag">High-Performance Computing</span>
+                            <a href="https://github.com/batmancio/parallel-python-computing" target="_blank" rel="noopener noreferrer" class="card-github" title="Vedi su GitHub"><i class="fa-brands fa-github"></i></a>
+                        </div>
+                        <h3 class="card-title">parallel-python-computing</h3>
+                        <p class="card-desc">Suite di calcolo parallelo multi-core in Python (Multiprocessing Pool) con analisi di Speedup ed Efficienza di Amdahl per Gradient Descent e Monte Carlo.</p>
+                        <div class="card-metrics">
+                            <span class="metric-pill"><i class="fa-solid fa-gauge-high"></i> Speedup: 6.3x (8 cores)</span>
+                            <span class="metric-pill"><i class="fa-solid fa-microchip"></i> Multi-core</span>
+                        </div>
+                        <div class="card-tech">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">Multiprocessing</span>
+                            <span class="tech-tag">NumPy</span>
+                            <span class="tech-tag">Pillow</span>
+                        </div>
+                        <div class="card-actions">
+                            <a href="https://github.com/batmancio/parallel-python-computing" target="_blank" rel="noopener noreferrer" class="btn btn-card-primary">Repository Code ↗</a>
+                        </div>
+                    </div>
+
+                    <!-- Project 6: nosql-mongodb-analytics -->
+                    <div class="project-card glass-card" data-category="data-eng" id="proj-nosql-mongodb">
+                        <div class="card-header">
+                            <span class="card-tag">Big Data & NoSQL</span>
+                            <a href="https://github.com/batmancio/nosql-mongodb-analytics" target="_blank" rel="noopener noreferrer" class="card-github" title="Vedi su GitHub"><i class="fa-brands fa-github"></i></a>
+                        </div>
+                        <h3 class="card-title">nosql-mongodb-analytics</h3>
+                        <p class="card-desc">Sistema di analisi per la rilevazione di spoiler cinematografici (MVSD) con 14 pipeline MongoDB complesse e query di grafi su <strong>Neo4j Cypher</strong>.</p>
+                        <div class="card-metrics">
+                            <span class="metric-pill"><i class="fa-solid fa-database"></i> 14 Pipelines</span>
+                            <span class="metric-pill"><i class="fa-solid fa-diagram-project"></i> Neo4j Graphs</span>
+                        </div>
+                        <div class="card-tech">
+                            <span class="tech-tag">MongoDB</span>
+                            <span class="tech-tag">Neo4j</span>
+                            <span class="tech-tag">Cypher</span>
+                            <span class="tech-tag">PyMongo</span>
+                        </div>
+                        <div class="card-actions">
+                            <a href="https://github.com/batmancio/nosql-mongodb-analytics" target="_blank" rel="noopener noreferrer" class="btn btn-card-primary">Repository Code ↗</a>
+                        </div>
+                    </div>
+
+                    <!-- Project 7: high-dim-machine-learning -->
+                    <div class="project-card glass-card" data-category="ml" id="proj-high-dim-ml">
+                        <div class="card-header">
+                            <span class="card-tag">Machine Learning</span>
+                            <a href="https://github.com/batmancio/high-dim-machine-learning" target="_blank" rel="noopener noreferrer" class="card-github" title="Vedi su GitHub"><i class="fa-brands fa-github"></i></a>
+                        </div>
+                        <h3 class="card-title">high-dim-machine-learning</h3>
+                        <p class="card-desc">Modellazione in spazi ad alta dimensione ($P \gg N$) con regolarizzazioni ElasticNet, Lasso, Ridge, PCR e PLS su dataset UCR Time Series.</p>
+                        <div class="card-metrics">
+                            <span class="metric-pill"><i class="fa-solid fa-bullseye"></i> ElasticNet Acc: 91.4%</span>
+                            <span class="metric-pill"><i class="fa-solid fa-filter"></i> Feature Sparsity</span>
+                        </div>
+                        <div class="card-tech">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">Scikit-Learn</span>
+                            <span class="tech-tag">tslearn</span>
+                            <span class="tech-tag">ElasticNet</span>
+                        </div>
+                        <div class="card-actions">
+                            <a href="https://github.com/batmancio/high-dim-machine-learning" target="_blank" rel="noopener noreferrer" class="btn btn-card-primary">Repository Code ↗</a>
+                        </div>
+                    </div>
+
+                    <!-- Project 8: machine-learning-benchmarks -->
+                    <div class="project-card glass-card" data-category="ml" id="proj-ml-benchmarks">
+                        <div class="card-header">
+                            <span class="card-tag">Machine Learning</span>
+                            <a href="https://github.com/batmancio/machine-learning-benchmarks" target="_blank" rel="noopener noreferrer" class="card-github" title="Vedi su GitHub"><i class="fa-brands fa-github"></i></a>
+                        </div>
+                        <h3 class="card-title">machine-learning-benchmarks</h3>
+                        <p class="card-desc">Validazione empirica del rischio in eccesso OLS ($\mathbb{E}[R(\hat{\theta})] - R(\theta^*) = \frac{\sigma^2 (p+1)}{n}$) e benchmark comparativo (XGBoost, Random Forest, SVM).</p>
+                        <div class="card-metrics">
+                            <span class="metric-pill"><i class="fa-solid fa-trophy"></i> XGBoost AUC: 0.988</span>
+                            <span class="metric-pill"><i class="fa-solid fa-square-root-variable"></i> Risk Theory</span>
+                        </div>
+                        <div class="card-tech">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">XGBoost</span>
+                            <span class="tech-tag">Scikit-Learn</span>
+                            <span class="tech-tag">Seaborn</span>
+                        </div>
+                        <div class="card-actions">
+                            <a href="https://github.com/batmancio/machine-learning-benchmarks" target="_blank" rel="noopener noreferrer" class="btn btn-card-primary">Repository Code ↗</a>
+                        </div>
+                    </div>
+
+                    <!-- Project 9: data-visualization-analysis -->
+                    <div class="project-card glass-card" data-category="data-eng" id="proj-data-viz">
+                        <div class="card-header">
+                            <span class="card-tag">Data Storytelling & Viz</span>
+                            <a href="https://github.com/batmancio/data-visualization-analysis" target="_blank" rel="noopener noreferrer" class="card-github" title="Vedi su GitHub"><i class="fa-brands fa-github"></i></a>
+                        </div>
+                        <h3 class="card-title">data-visualization-analysis</h3>
+                        <p class="card-desc">Framework di Data Storytelling e visualizzazione dati (Seaborn, Matplotlib, Plotly) per distribuzioni congiunte, mappe di calore triangolari e grafici interattivi.</p>
+                        <div class="card-metrics">
+                            <span class="metric-pill"><i class="fa-solid fa-palette"></i> Joint KDE & Heatmaps</span>
+                            <span class="metric-pill"><i class="fa-solid fa-chart-simple"></i> Interactive Viz</span>
+                        </div>
+                        <div class="card-tech">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">Seaborn</span>
+                            <span class="tech-tag">Matplotlib</span>
+                            <span class="tech-tag">Plotly</span>
+                        </div>
+                        <div class="card-actions">
+                            <a href="https://github.com/batmancio/data-visualization-analysis" target="_blank" rel="noopener noreferrer" class="btn btn-card-primary">Repository Code ↗</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="skills-section section-padding">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">Competenze Tecniche</span>
+                    <h2 class="section-title">Tech Stack & Tooling</h2>
+                </div>
+
+                <div class="skills-grid">
+                    
+                    <div class="skill-category glass-card">
+                        <div class="category-header">
+                            <i class="fa-solid fa-brain"></i>
+                            <h3>AI & Agent Architectures</h3>
+                        </div>
+                        <ul class="skill-list">
+                            <li><span class="skill-name">A2A Protocols & MCP</span> <span class="skill-level">Avanzato</span></li>
+                            <li><span class="skill-name">PyTorch & Transformers</span> <span class="skill-level">Avanzato</span></li>
+                            <li><span class="skill-name">LangGraph & RAG</span> <span class="skill-level">Intermedio+</span></li>
+                            <li><span class="skill-name">Speech & Vision Models</span> <span class="skill-level">Avanzato</span></li>
+                        </ul>
+                    </div>
+
+                    <div class="skill-category glass-card">
+                        <div class="category-header">
+                            <i class="fa-solid fa-calculator"></i>
+                            <h3>Statistica & Quant Modeling</h3>
+                        </div>
+                        <ul class="skill-list">
+                            <li><span class="skill-name">R & JAGS (MCMC)</span> <span class="skill-level">Avanzato</span></li>
+                            <li><span class="skill-name">Functional Data Analysis (FDA)</span> <span class="skill-level">Avanzato</span></li>
+                            <li><span class="skill-name">Sparse VAR & Time Series</span> <span class="skill-level">Avanzato</span></li>
+                            <li><span class="skill-name">Goodness-of-Fit & Monte Carlo</span> <span class="skill-level">Avanzato</span></li>
+                        </ul>
+                    </div>
+
+                    <div class="skill-category glass-card">
+                        <div class="category-header">
+                            <i class="fa-solid fa-server"></i>
+                            <h3>Data Engineering & Vector DB</h3>
+                        </div>
+                        <ul class="skill-list">
+                            <li><span class="skill-name">Qdrant Vector Storage</span> <span class="skill-level">Avanzato</span></li>
+                            <li><span class="skill-name">PostgreSQL & SQL</span> <span class="skill-level">Avanzato</span></li>
+                            <li><span class="skill-name">MongoDB & Neo4j Cypher</span> <span class="skill-level">Avanzato</span></li>
+                            <li><span class="skill-name">Parallel Multiprocessing</span> <span class="skill-level">Avanzato</span></li>
+                        </ul>
+                    </div>
+
+                    <div class="skill-category glass-card">
+                        <div class="category-header">
+                            <i class="fa-solid fa-gears"></i>
+                            <h3>MLOps & Telemetry</h3>
+                        </div>
+                        <ul class="skill-list">
+                            <li><span class="skill-name">Docker & Containerization</span> <span class="skill-level">Avanzato</span></li>
+                            <li><span class="skill-name">Prometheus & Grafana</span> <span class="skill-level">Intermedio+</span></li>
+                            <li><span class="skill-name">Git & Code Hygiene</span> <span class="skill-level">Avanzato</span></li>
+                            <li><span class="skill-name">Seaborn, Bokeh, ggplot2</span> <span class="skill-level">Avanzato</span></li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience & Education Section -->
+        <section id="experience" class="experience-section section-padding">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">Esperienze e Formazione</span>
+                    <h2 class="section-title">Il Mio Percorso Accademico e Professionale</h2>
+                </div>
+
+                <div class="timeline">
+
+                    <!-- Experience Item 1 -->
+                    <div class="timeline-item left">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content glass-card">
+                            <span class="timeline-date">2026.03 – 2026.09</span>
+                            <h3>AI & Data Science Intern</h3>
+                            <h4 class="company">IPS S.p.A. (Aprilia, Italia)</h4>
+                            <p>Sviluppo ed ingegnerizzazione di un sistema multi-agente basato sul protocollo A2A e Model Context Protocol (MCP) per l'analisi automatizzata di flussi audio/video. Modelli NLP, Speech-to-Text e Face Recognition integrati con Qdrant vector retrieval, PostgreSQL e Docker/Prometheus/Grafana.</p>
+                        </div>
+                    </div>
+
+                    <!-- Experience Item 2 -->
+                    <div class="timeline-item right">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content glass-card">
+                            <span class="timeline-date">2025 – In corso</span>
+                            <h3>Master for Smart Data Science (EQF 7)</h3>
+                            <h4 class="company">ENSAI (Bruz, Francia)</h4>
+                            <p>Specializzazione avanzata in Data Science, Machine Learning, Deep Learning, Climatologia Funzionale e modellazione statistica applicata.</p>
+                        </div>
+                    </div>
+
+                    <!-- Experience Item 3 -->
+                    <div class="timeline-item left">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content glass-card">
+                            <span class="timeline-date">2026</span>
+                            <h3>Ricerca sull'Interpolazione Spaziale</h3>
+                            <h4 class="company">In collaborazione con INSEE (Rennes, Francia)</h4>
+                            <p>Studio comparativo tra metodi di ensemble albero (Random Forests, Gradient Boosting) e tecniche di interpolazione spaziale classica (Kriging, Spline, IDW).</p>
+                        </div>
+                    </div>
+
+                    <!-- Experience Item 4 -->
+                    <div class="timeline-item right">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content glass-card">
+                            <span class="timeline-date">2024 – In corso</span>
+                            <h3>Laurea Magistrale in Metodi Statistici (EQF 7)</h3>
+                            <h4 class="company">La Sapienza (Roma, Italia)</h4>
+                            <p>Curriculum Data Analyst focalizzato su modelli statistici complessi, statistica bayesiana e modelli di serie temporali.</p>
+                        </div>
+                    </div>
+
+                    <!-- Experience Item 5 -->
+                    <div class="timeline-item left">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content glass-card">
+                            <span class="timeline-date">2021 – 2024</span>
+                            <h3>Laurea Triennale in Statistica Gestionale</h3>
+                            <h4 class="company">La Sapienza (Roma, Italia)</h4>
+                            <p>Formazione di base quantitativa rigorosa in calcolo delle probabilità, inferenza statistica, algebra lineare e gestione dei dati.</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section section-padding">
+            <div class="container">
+                <div class="contact-wrapper glass-card">
+                    <div class="contact-info">
+                        <span class="section-tag">Contatti</span>
+                        <h2>Restiamo in Contatto 🚀</h2>
+                        <p>Sono sempre aperto a nuove opportunità professionali, collaborazioni di ricerca ed entusiasmanti sfide in Data Science ed AI Engineering.</p>
+
+                        <div class="contact-details">
+                            <div class="contact-item">
+                                <div class="icon-circle"><i class="fa-solid fa-envelope"></i></div>
+                                <div>
+                                    <span>Email Personale</span>
+                                    <a href="mailto:matteo.mancini0619@gmail.com">matteo.mancini0619@gmail.com</a>
+                                </div>
+                            </div>
+
+                            <div class="contact-item">
+                                <div class="icon-circle"><i class="fa-solid fa-graduation-cap"></i></div>
+                                <div>
+                                    <span>Email Accademica</span>
+                                    <a href="mailto:matteo.mancini@eleve.ensai.fr">matteo.mancini@eleve.ensai.fr</a>
+                                </div>
+                            </div>
+
+                            <div class="contact-item">
+                                <div class="icon-circle"><i class="fa-brands fa-linkedin-in"></i></div>
+                                <div>
+                                    <span>LinkedIn</span>
+                                    <a href="https://www.linkedin.com/in/matteo-mancini-75a982131/" target="_blank" rel="noopener noreferrer">Matteo Mancini</a>
+                                </div>
+                            </div>
+
+                            <div class="contact-item">
+                                <div class="icon-circle"><i class="fa-brands fa-github"></i></div>
+                                <div>
+                                    <span>GitHub</span>
+                                    <a href="https://github.com/batmancio" target="_blank" rel="noopener noreferrer">@batmancio</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <form class="contact-form" id="contact-form">
+                        <h3>Invia un Messaggio</h3>
+                        <div class="form-group">
+                            <label for="form-name">Nome e Cognome</label>
+                            <input type="text" id="form-name" required placeholder="Es. Mario Rossi">
+                        </div>
+                        <div class="form-group">
+                            <label for="form-email">Indirizzo Email</label>
+                            <input type="email" id="form-email" required placeholder="mario.rossi@azienda.com">
+                        </div>
+                        <div class="form-group">
+                            <label for="form-message">Messaggio</label>
+                            <textarea id="form-message" rows="4" required placeholder="Scrivi qui il tuo messaggio..."></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-full" id="btn-submit-form">
+                            <i class="fa-solid fa-paper-plane"></i> Invia Messaggio
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <p>&copy; 2026 Matteo Mancini. Tutti i diritti riservati.</p>
+            <p>Progettato con Vanilla CSS & JS per il massimo delle prestazioni.</p>
+        </div>
+    </footer>
+
+    <!-- Script File -->
+    <script src="script.js"></script>
+</body>
+</html>
