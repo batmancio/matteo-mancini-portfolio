@@ -43,6 +43,7 @@
                 <a href="#projects" class="nav-link" id="nav-link-projects">Progetti GitHub</a>
                 <a href="#skills" class="nav-link" id="nav-link-skills">Competenze</a>
                 <a href="#experience" class="nav-link" id="nav-link-experience">Percorso</a>
+                <button class="nav-link btn-cv-trigger" id="nav-link-cv"><i class="fa-solid fa-file-pdf"></i> CV</button>
                 <a href="#contact" class="nav-link btn-contact-nav" id="nav-link-contact">Contatti</a>
             </nav>
 
@@ -82,6 +83,9 @@
                         <a href="#projects" class="btn btn-primary" id="btn-hero-projects">
                             <i class="fa-solid fa-rocket"></i> Esplora i Progetti (9 Repo)
                         </a>
+                        <button class="btn btn-outline btn-cv-trigger" id="btn-hero-cv">
+                            <i class="fa-solid fa-file-pdf"></i> Visualizza CV
+                        </button>
                         <a href="https://github.com/batmancio" target="_blank" rel="noopener noreferrer" class="btn btn-outline" id="btn-hero-github">
                             <i class="fa-brands fa-github"></i> GitHub @batmancio ↗
                         </a>
@@ -616,6 +620,33 @@ me.<span class="py-func">solve_complex_problems</span>(data=<span class="py-str"
             <p>Progettato con Vanilla CSS & JS per il massimo delle prestazioni.</p>
         </div>
     </footer>
+
+    <!-- CV Viewer Modal Overlay -->
+    <div class="cv-modal-overlay" id="cv-modal-overlay" aria-hidden="true">
+        <div class="cv-modal-container glass-card">
+            <div class="cv-modal-header">
+                <div class="cv-title-group">
+                    <i class="fa-solid fa-file-pdf pdf-icon"></i>
+                    <div>
+                        <h3>Curriculum Vitae – Matteo Mancini</h3>
+                        <span class="cv-subtitle">Data Scientist & AI Engineer (EQF 7)</span>
+                    </div>
+                </div>
+                <div class="cv-header-actions">
+                    <a href="Matteo_Mancini_CV.pdf" download="Matteo_Mancini_CV.pdf" class="btn btn-primary btn-sm" id="btn-modal-download-cv">
+                        <i class="fa-solid fa-download"></i> Scarica PDF
+                    </a>
+                    <a href="Matteo_Mancini_CV.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm" id="btn-modal-open-cv">
+                        <i class="fa-solid fa-up-right-from-square"></i> Scheda Intera ↗
+                    </a>
+                    <button class="cv-modal-close" id="cv-modal-close" aria-label="Chiudi Modal">&times;</button>
+                </div>
+            </div>
+            <div class="cv-modal-body">
+                <iframe src="Matteo_Mancini_CV.pdf" title="Curriculum Vitae PDF" class="cv-pdf-frame" id="cv-pdf-frame"></iframe>
+            </div>
+        </div>
+    </div>
 
     <!-- Script File -->
     <script src="script.js"></script>

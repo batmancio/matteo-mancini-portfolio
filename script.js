@@ -196,4 +196,45 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
+
+    /* ----------------------------------------------------------------------
+       7. INTERACTIVE CV MODAL PREVIEWER LOGIC
+       ---------------------------------------------------------------------- */
+    const cvTriggers = document.querySelectorAll('.btn-cv-trigger');
+    const cvModalOverlay = document.getElementById('cv-modal-overlay');
+    const cvModalClose = document.getElementById('cv-modal-close');
+
+    if (cvModalOverlay) {
+        cvTriggers.forEach(trigger => {
+            trigger.addEventListener('click', (e) => {
+                e.preventDefault();
+                cvModalOverlay.classList.add('active');
+                cvModalOverlay.setAttribute('aria-hidden', 'false');
+                document.body.style.overflow = 'hidden';
+            });
+        });
+
+        const closeModal = () => {
+            cvModalOverlay.classList.remove('active');
+            cvModalOverlay.setAttribute('aria-hidden', 'true');
+            document.body.style.overflow = '';
+        };
+
+        if (cvModalClose) {
+            cvModalClose.addEventListener('click', closeModal);
+        }
+
+        cvModalOverlay.addEventListener('click', (e) => {
+            if (e.target === cvModalOverlay) {
+                closeModal();
+            }
+        });
+
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape' && cvModalOverlay.classList.contains('active')) {
+                closeModal();
+            }
+        });
+    }
+
 });
