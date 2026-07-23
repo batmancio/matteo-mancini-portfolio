@@ -200,7 +200,7 @@ document.addEventListener('DOMContentLoaded', () => {
     /* ----------------------------------------------------------------------
        7. INTERACTIVE CV MODAL PREVIEWER LOGIC
        ---------------------------------------------------------------------- */
-    const cvTriggers = document.querySelectorAll('.btn-cv-trigger');
+    const cvTriggers = document.querySelectorAll('.btn-cv-trigger, #btn-hero-cv, #nav-link-cv');
     const cvModalOverlay = document.getElementById('cv-modal-overlay');
     const cvModalClose = document.getElementById('cv-modal-close');
 
