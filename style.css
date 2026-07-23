@@ -106,7 +106,7 @@ body {
 /* Container System with Mobile Safe-Areas */
 .container {
     width: 100%;
-    max-width: 1240px;
+    max-width: 1280px;
     margin: 0 auto;
     padding: 0 1.5rem;
 }
@@ -376,7 +376,7 @@ h1, h2, h3, h4 {
 
 .hero-container {
     display: grid;
-    grid-template-columns: 1.15fr 0.85fr;
+    grid-template-columns: 1fr 1.05fr;
     gap: 2.5rem;
     align-items: center;
 }
@@ -493,6 +493,7 @@ h1, h2, h3, h4 {
     border: 1px solid var(--border-subtle);
     box-shadow: 0 16px 40px rgba(0, 0, 0, 0.6);
     transition: var(--transition);
+    text-align: left;
 }
 
 .code-window:hover {
@@ -527,17 +528,18 @@ h1, h2, h3, h4 {
 }
 
 .code-body {
-    padding: 1.4rem;
+    padding: 1.25rem 1.35rem;
     overflow-x: auto;
     font-family: var(--font-code);
-    font-size: 0.85rem;
-    line-height: 1.65;
+    font-size: 0.835rem;
+    line-height: 1.55;
 }
 
 .code-body pre {
     margin: 0;
     white-space: pre-wrap;
-    word-break: break-word;
+    word-break: normal;
+    overflow-wrap: break-word;
 }
 
 /* Syntax Highlighting Colors for Python */
