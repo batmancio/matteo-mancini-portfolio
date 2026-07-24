@@ -9,10 +9,9 @@ document.addEventListener('DOMContentLoaded', () => {
        ---------------------------------------------------------------------- */
     const typingElement = document.getElementById('typing-text');
     const roles = [
-        "AI & Machine Learning Engineer",
-        "Statistical Modeling Specialist",
-        "Multi-Agent Architect (A2A & MCP)",
-        "Bayesian Data Scientist"
+        "AI & Machine Learning Developer",
+        "Data Analyst",
+        "Data Scientist"
     ];
 
     let roleIndex = 0;
